@@ -10,13 +10,8 @@ The motivation behind this project is to improve the accuracy and efficiency of 
 
 Skin cancer, especially Melanoma, is highly curable when detected early. However, the similarity between malignant and benign samples in dermoscopy images makes accurate diagnosis challenging. This project aims to address this problem by leveraging deep learning to segment skin lesions and classify them for melanoma detection.
 
-## Key Takeaways
-
-During the course of this project, we gained valuable insights into the following areas:
-- Deep learning techniques for image segmentation and classification.
-- Handling and preprocessing of medical image datasets.
-- The importance of integrating segmentation and classification for improved diagnostic performance.
-- Collaborative efforts in the field of medical image analysis.
+## Illustrative Diagram of the approach
+![image](https://github.com/naman2398/Naman.Portfolio/blob/main/images/melanoma_approach.PNG)
 
 ## Key Features
 
