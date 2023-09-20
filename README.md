@@ -1,4 +1,5 @@
 # Skin Cancer Detection using Deep Learning
+[Link to publication](https://ieeexplore.ieee.org/document/10094404)
 
 Skin Cancer, particularly Melanoma, has a very high fatality rate globally, and early diagnosis is crucial for successful treatment. This project aims to provide a solution to the challenging task of melanoma recognition through visual inspection of dermoscopy images. We have developed a two-stage deep learning technique that combines precise skin lesion segmentation with melanoma detection using convolutional neural networks (CNNs).
 
