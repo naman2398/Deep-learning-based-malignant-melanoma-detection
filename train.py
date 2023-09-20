@@ -22,7 +22,7 @@ from efficientnet.tfkeras import EfficientNetB7 as effnetb7
 import json
 from keras.callbacks import EarlyStopping, ReduceLROnPlateau
 
-from models.effnet import base_model as effnet
+from models.base_models import dense_net_model, res_net_model, eff_net_model, inception_v3_model, inception_resnet_v2_model
 
 
 # CONSTANTS
@@ -89,13 +89,8 @@ class Metrics(Callback):
 
         return
 
-
-# IMPORT BASE MODELS
-# base_model = effnetb7(include_top=False,
-#                      weights = None,
-#                      input_shape=(224,224,3))
-
-base_model = effnet
+# Initialize the different models as base_models
+base_model = inception_resnet_v2_model
 
 
 def extra_layers(base_model):
