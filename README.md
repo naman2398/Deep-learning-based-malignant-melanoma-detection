@@ -53,7 +53,6 @@ This project relies on the following Python libraries and frameworks:
 - Matplotlib (matplotlib)
 - Pandas (pandas)
 - scikit-learn (sklearn)
-- SciPy (scipy)
 - TensorFlow (tensorflow)
 - tqdm
 - EfficientNetB7 (efficientnet.tfkeras)
