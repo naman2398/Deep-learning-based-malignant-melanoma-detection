@@ -10,7 +10,7 @@ The motivation behind this project is to improve the accuracy and efficiency of 
 
 Skin cancer, especially Melanoma, is highly curable when detected early. However, the similarity between malignant and benign samples in dermoscopy images makes accurate diagnosis challenging. This project aims to address this problem by leveraging deep learning to segment skin lesions and classify them for melanoma detection.
 
-## What We Learned
+## Key Takeaways
 
 During the course of this project, we gained valuable insights into the following areas:
 - Deep learning techniques for image segmentation and classification.
@@ -22,14 +22,14 @@ During the course of this project, we gained valuable insights into the followin
 
 - Two-stage approach: Skin lesion segmentation followed by melanoma detection.
 - Utilizes the DoubleU-Net architecture for precise lesion boundary segmentation.
-- Employs five different CNN architectures ([DenseNet201](link1), [ResNet152V2](link2), [EfficientNetB7](link3), [InceptionV3](link4), and [InceptionResnetV2](link5)) for melanoma classification.
+- Employs five different CNN architectures DenseNet201, ResNet152V2, EfficientNetB7, InceptionV3, and InceptionResnetV2 for melanoma classification.
 - Enhances diagnostic performance by focusing on segmented lesions, not the entire dermoscopy image.
 
 ## Dataset
 
 Our deep learning model was trained and evaluated on three open-source independent datasets provided by the "International Skin Imaging Collaboration (ISIC) Melanoma Project":
 - [ISIC 2017](https://challenge.isic-archive.com/data/#2017): Used for training the segmentation model as it contains skin lesion images with binary masks.
-- [ISIC 2018](link7) and [ISIC 2019](link8): Utilized for classification.
+- [ISIC 2018](https://challenge.isic-archive.com/data/#2018) and [ISIC 2019](https://challenge.isic-archive.com/data/#2019): Utilized for classification.
 - Duplicates have been removed, resulting in a final dataset with segmented images categorized into eight class labels:
   1. Melanocytic Nevus (NV)
   2. Benign Keratosis (BKL)
@@ -41,6 +41,29 @@ Our deep learning model was trained and evaluated on three open-source independe
   8. Dermatofibroma (DF)
   
   It's important to note that Melanoma (MEL) is cancerous, while the other labels are non-cancerous.
+
+## Dependencies
+
+This project relies on the following Python libraries and frameworks:
+
+- OpenCV (cv2)
+- Pillow (PIL)
+- NumPy (numpy)
+- Keras (keras)
+- Matplotlib (matplotlib)
+- Pandas (pandas)
+- scikit-learn (sklearn)
+- SciPy (scipy)
+- TensorFlow (tensorflow)
+- tqdm
+- EfficientNetB7 (efficientnet.tfkeras)
+- json
+
+Make sure to install these dependencies before running the project. You can typically install them using the `pip` package manager. For example:
+
+```bash
+pip install opencv-python-headless pillow numpy keras matplotlib pandas scikit-learn scipy tensorflow tqdm efficientnet
+```
 
 ## Getting Started
 
@@ -54,11 +77,7 @@ To get started with this project, you can follow these steps:
 
 ## Contribution
 
-We welcome contributions from the community to enhance the accuracy and capabilities of our skin cancer detection system. Feel free to open issues, submit pull requests, or reach out to us for collaboration.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+Contributions from the community are welcomed to enhance the accuracy and capabilities of our skin cancer detection system. Feel free to open issues, submit pull requests, or reach out to us for collaboration.
 
 ---
 
